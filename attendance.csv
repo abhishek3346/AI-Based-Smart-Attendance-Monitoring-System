@@ -1,0 +1,9 @@
+student_id,name,timestamp,status
+S001,Alice,2026-07-17 23:36:59,present
+S002,Bob,2026-07-17 23:36:59,present
+S001,Alice,2026-07-17 23:39:50,present
+S002,Bob,2026-07-17 23:39:50,present
+S001,Alice,2026-07-17 23:41:27,present
+S002,Bob,2026-07-17 23:41:27,present
+S001,Alice,2026-07-17 23:59:11,present
+S002,Bob,2026-07-17 23:59:11,present
