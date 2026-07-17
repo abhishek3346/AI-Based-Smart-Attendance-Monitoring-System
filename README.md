@@ -1,15 +1,25 @@
-# AI-Based Smart Attendance Monitoring System
+# AI Smart Attendance System
 
-A Python starter project for an AI-powered attendance monitoring system. The current implementation uses a lightweight similarity-based matching engine to simulate face-embedding recognition and log attendance in CSV.
+A simple Python-based smart attendance system that uses a webcam and OpenCV face detection to register people and mark attendance automatically.
 
 ## Features
-- Register students with a name and embedding vector
-- Mark attendance with a new embedding and similarity threshold
-- Persist attendance records to CSV
-- Provide a simple summary report
+- Register a face with a name
+- Detect faces from the webcam in real time
+- Match recognized faces against stored profiles
+- Save attendance records in a CSV file
 
-## Run locally
-```bash
-python -m pytest
-python main.py
-```
+## Setup
+1. Create and activate a virtual environment:
+   - `python3 -m venv .venv`
+   - `source .venv/bin/activate`
+2. Install dependencies:
+   - `pip install -r requirements.txt`
+3. Register a person:
+   - `python register_student.py`
+4. Start attendance tracking:
+   - `python mark_attendance.py`
+
+## Notes
+- A working webcam is required.
+- The system stores face samples in the `captured_faces/` folder.
+- Attendance logs are written to `attendance.csv`.
